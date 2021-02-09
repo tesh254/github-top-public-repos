@@ -19,7 +19,7 @@ function App() {
   function getRepos() {
     axios
       .get(
-        `https://api.github.com/search/repositories?q=stars:>=1000+language:go&sort=stars&order=desc&per_page=10`,
+        `https://api.github.com/search/repositories?q=stars:>=1000&sort=stars&order=desc&per_page=10`,
         {
           headers: {
             Accept: "application/vnd.github.v3+json",
